@@ -2,3 +2,23 @@ body{
     background: #000;
       font-family: 'Poppins', sans-serif;
 }
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Thumb (normal state) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg,#6db4e0, #352ad3);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+
+

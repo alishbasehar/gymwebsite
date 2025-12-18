@@ -12,21 +12,20 @@ const Vedio = () => {
     <section
       className="relative pt-10 px-4 md:px-10 container mx-auto max-w-7xl flex flex-col items-center justify-center rounded-3xl"
       style={{
-  backgroundImage: `
-    linear-gradient(
-      135deg,
-      rgba(77, 120, 200, 0.93),
-      rgba(32, 25, 120, 0.93)
-    ),
-    url(${img2})
-  `,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
-      backgroundColor: "white",
-}}
-
+        backgroundImage: `
+          linear-gradient(
+            135deg,
+            rgba(77, 120, 200, 0.93),
+            rgba(32, 25, 120, 0.93)
+          ),
+          url(${img2})
+        `,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
+        backgroundColor: "white",
+      }}
     >
       {/* Heading */}
       <h2 className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 max-w-3xl z-10 relative">
@@ -50,16 +49,18 @@ const Vedio = () => {
           />
         </div>
 
-        {/* Play Button */}
-        <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                     text-white p-3 sm:p-4 md:p-5 rounded-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                     shadow-lg hover:scale-110 transition-transform duration-300"
-          style={{
-            background: "linear-gradient(135deg, #4b3ad3, #1a6ff2)",
-          }}
-        >
-          ►
+        {/* Play Button with glow animation */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <div
+            className="flex items-center pl-2 justify-center w-13 h-13 sm:w-18 sm:h-18 md:w-23 md:h-23 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulseGlow"
+            style={{
+              background: "linear-gradient(135deg, #4b3ad3, #1a6ff2)",
+            }}
+          >
+            <span className="text-white text-3xl sm:text-4xl md:text-5xl leading-none">
+              ►
+            </span>
+          </div>
         </div>
       </div>
 
@@ -85,6 +86,30 @@ const Vedio = () => {
           </div>
         </div>
       )}
+
+      {/* Glow Animation Keyframes */}
+      <style jsx>{`
+        @keyframes pulseGlow {
+          0% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                        0 0 20px rgba(75, 58, 211, 0.4),
+                        0 0 30px rgba(26, 111, 242, 0.5);
+          }
+          50% {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                        0 0 40px rgba(75, 58, 211, 0.6),
+                        0 0 60px rgba(26, 111, 242, 0.7);
+          }
+          100% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                        0 0 20px rgba(75, 58, 211, 0.4),
+                        0 0 30px rgba(26, 111, 242, 0.5);
+          }
+        }
+        .animate-pulseGlow {
+          animation: pulseGlow 2s infinite ease-in-out;
+        }
+      `}</style>
     </section>
   );
 };

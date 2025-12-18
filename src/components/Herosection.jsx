@@ -1,7 +1,9 @@
-import React from 'react';
+
 import heroImage from '../images/banner.png';
+import { useNavigate } from "react-router-dom";
 
 const Herosection = () => {
+  const navigate = useNavigate()
   return (
     <section className="relative overflow-hidden">
       <style>
@@ -49,6 +51,8 @@ const Herosection = () => {
             {/* Start Now Button */}
             <button
               className="px-5 sm:px-8 py-2 sm:py-3 rounded-full text-white font-bold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto"
+              onClick={() => navigate("/Aboutus")}
+              
               style={{
                 background: 'linear-gradient(135deg, #6db4e0, #352ad3)',
                 transition: 'background 0.3s ease',
@@ -64,10 +68,14 @@ const Herosection = () => {
             </button>
 
             {/* Watch Video Button */}
-            <button className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1 sm:py-2 bg-[#fdc700] hover:bg-yellow-500 rounded-full text-black font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto justify-center text-xs sm:text-sm">
-              <span className="text-lg sm:text-xl">▶</span>
-              <span className="text-xs sm:text-sm">Watch A Video</span>
-            </button>
+           <button
+  className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1 sm:py-2 bg-[#fdc700] hover:bg-yellow-500 rounded-full text-black font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto justify-center text-xs sm:text-sm"
+  onClick={() => window.open("https://www.tiktok.com/@qrgym0/video/7584207811815542034?_r=1&_t=ZS-9197GaYMHQ7", "_blank")}
+>
+  <span className="text-lg sm:text-xl">▶</span>
+  <span className="text-xs sm:text-sm">Watch A Video</span>
+</button>
+
           </div>
         </div>
 

@@ -13,8 +13,8 @@ const CounterBox = ({ number, text, suffix }) => {
 
   useEffect(() => {
     let start = 0;
-    const duration = 50000; // 5 seconds
-    const intervalTime = 50; 
+    const duration = 30000; // 5 seconds
+    const intervalTime = 30; 
     const step = Math.ceil(number / (duration / intervalTime));
 
     // start the counter after next tick to avoid synchronous setState
