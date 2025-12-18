@@ -26,14 +26,21 @@ const Herosection = () => {
 
         {/* Text Content */}
         <div className="text-white md:w-1/2 z-10 text-center md:text-left space-y-6">
-<h1 className="font-bold text-lg sm:text-xl  md:text-3xl lg:text-5xl mb-3 sm:mb-4 md:mb-6 leading-snug animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-  <span className="block text-white">QR GYM WHERE</span>
-  <span className="block">
-    <span className="text-[#fdc700]">STRENGTH</span>
-    <span className="text-white"> MEETS</span>
+<h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-5xl mb-3 sm:mb-4 md:mb-6 leading-snug animate-fade-in-up"
+  style={{ animationDelay: '0.2s' }}
+>
+  {/* Line 1 */}
+  <span className="block text-white">
+    QR GYM WHERE <span className="text-[#fdc700]">STRENGTH</span>
   </span>
-  <span className="block text-[#fdc700] font-bold">PASSION</span>
+
+  {/* Line 2 */}
+  <span className="block">
+    <span className="text-white">MEETS </span>
+    <span className="text-[#fdc700] font-bold">PASSION</span>
+  </span>
 </h1>
+
           <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-full md:max-w-lg mx-auto md:mx-0 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             Our professional trainers guide you with the best programs to achieve a healthy, strong body.
           </p>

@@ -13,28 +13,33 @@ const CounterBox = ({ number, text, suffix }) => {
 
   useEffect(() => {
     let start = 0;
-    const duration = 6000;
-    const step = Math.ceil(number / (duration / 20));
+    const duration = 50000; // 5 seconds
+    const intervalTime = 50; 
+    const step = Math.ceil(number / (duration / intervalTime));
 
-    const interval = setInterval(() => {
-      start += step;
-      if (start >= number) {
-        setCount(number);
-        clearInterval(interval);
-      } else {
-        setCount(start);
-      }
-    }, 20);
+    // start the counter after next tick to avoid synchronous setState
+    const timeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        start += step;
+        if (start >= number) {
+          setCount(number);
+          clearInterval(interval);
+        } else {
+          setCount(start);
+        }
+      }, intervalTime);
 
-    return () => clearInterval(interval);
+      
+      return () => clearInterval(interval);
+    }, 0);
+
+    // cleanup timeout if component unmounts early
+    return () => clearTimeout(timeout);
   }, [number]);
 
   return (
     <div className="relative w-44 h-44 sm:w-52 sm:h-52 flex items-center justify-center mb-6 sm:mb-0">
-      {/* 🔹 Blue background circle with bold border */}
       <div className="absolute inset-0 rounded-full bg-blue-700 border-4 border-white/80"></div>
-
-      {/* 🔹 Text above the circle */}
       <div className="relative z-10 text-center">
         <h3 className="text-4xl sm:text-5xl font-bold text-white">
           {count}{suffix}
@@ -46,6 +51,7 @@ const CounterBox = ({ number, text, suffix }) => {
     </div>
   );
 };
+
 
 const Counter = () => {
   return (

@@ -1,5 +1,5 @@
 
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
                 to-black text-white p-10">
       
       {/* Footer columns */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start flex-wrap max-w-7xl mx-auto gap-8">
+      <div className="flex flex-col lg:flex-row md:justify-between md:items-start flex-wrap max-w-7xl mx-auto gap-8">
         
         {/* Column 1: About */}
         <div className="flex-1 min-w-50">
@@ -25,37 +25,36 @@ const Footer = () => {
         <div className="flex-1 min-w-37.5">
           <h2 className="text-xl font-semibold mb-2">Quick Links</h2>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:text-[#fdc700] transition">Home</a></li>
-            <li><a href="#" className="hover:text-[#fdc700] transition">About Us</a></li>
-            <li><a href="#" className="hover:text-[#fdc700] transition">Services</a></li>
-            <li><a href="#" className="hover:text-[#fdc700] transition">Contact Us</a></li>
+            <li><a href="/" className="hover:text-[#fdc700] transition">Home</a></li>
+            <li><a href="/Aboutus" className="hover:text-[#fdc700] transition">About Us</a></li>
+            <li><a href="/Services" className="hover:text-[#fdc700] transition">Services</a></li>
+            <li><a href="/Contact" className="hover:text-[#fdc700] transition">Contact Us</a></li>
           </ul>
         </div>
 
         {/* Column 3: Contact Info with Icons */}
-       <div className="flex-1 min-w-50 space-y-4">
+       <div className="flex-1 min-w-50 space-y-6">
   <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
 
-  <p className="flex items-center gap-3">
-    <span className="w-10 h-10 flex items-center justify-center rounded-full bg-[#fdc700] text-white">
-      <FaEnvelope className="text-lg" />
-    </span>
-    info@qrgym.com
-  </p>
+  
 
-  <p className="flex items-center gap-3">
-    <span className="w-10 h-10 flex items-center justify-center rounded-full bg-[#fdc700] text-white">
-      <FaPhone className="text-lg" />
-    </span>
-    +974 1234 5678
-  </p>
+<p className="flex items-center gap-3">
+  <span className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#fdc700] text-white">
+    <FaPhone className="text-lg" />
+  </span>
+  +974 1234 5678
+</p>
 
-  <p className="flex items-center gap-3">
-    <span className="w-10 h-10 flex items-center justify-center rounded-full bg-[#fdc700] text-white">
-      <FaMapMarkerAlt className="text-lg" />
-    </span>
-    Al Refaa, Doha – Qatar
-  </p>
+
+  <p className="flex items-start gap-3">
+  <span className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#fdc700] text-white">
+    <FaMapMarkerAlt className="text-lg" />
+  </span>
+  <span>
+    First floor, directly opposite the National Museum – Al Riffa area, Doha, Qatar
+  </span>
+</p>
+
 </div>
 
 
@@ -67,7 +66,10 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mt-4 mb-2">Our Socials</h2>
           <div className="flex space-x-6">
   <a
-    href="#"
+    href="https://www.facebook.com/profile.php?id=61583350382077&sk=about"
+
+    target="_blank"
+  rel="noopener noreferrer"
     className="w-12 h-12 flex items-center justify-center rounded-full bg-[#fdc700] text-white text-xl
                "
   >
@@ -75,20 +77,25 @@ const Footer = () => {
   </a>
 
   <a
-    href="#"
+    href="https://www.instagram.com/qr_gym/?igsh=MmdyNzlobGtlbWE&utm_source=qr"
+    target="_blank"
+  rel="noopener noreferrer"
     className="w-12 h-12 flex items-center justify-center rounded-full bg-[#fdc700] text-white text-xl
               "
   >
     <FaInstagram />
   </a>
+<a
+  href="https://www.tiktok.com/@qrgym0?_r=1&amp;_t=ZS-9197GaYMHQ7"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-12 h-12 flex items-center justify-center rounded-full bg-[#fdc700] text-white text-xl"
+>
+  <FaTiktok />
+</a>
 
-  <a
-    href="#"
-    className="w-12 h-12 flex items-center justify-center rounded-full bg-[#fdc700] text-white text-xl
-               "
-  >
-    <FaTwitter />
-  </a>
+
+ 
 </div>
 
         </div>
