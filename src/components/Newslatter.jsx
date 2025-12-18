@@ -1,7 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 const Newslatter = () => {
-     const navigate = useNavigate()
   return (
     <section className="w-full py-12 px-4">
       <div
@@ -21,7 +20,7 @@ const Newslatter = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          {/* Subscribe Button */}
+          {/* Instagram (external link → a tag correct hai) */}
           <a
             href="https://www.instagram.com/qr_gym/?igsh=MmdyNzlobGtlbWE&utm_source=qr"
             target="_blank"
@@ -31,14 +30,13 @@ const Newslatter = () => {
             Subscribe
           </a>
 
-          {/* Contact Us Button */}
-          <a
-            href="/contact"
+          {/* Contact Us (internal route → Link use karo) */}
+          <Link
+            to="/Contact"
             className="px-8 py-3 rounded-full border-2 border-white text-white font-bold transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1 hover:shadow-xl"
-           onClick={() => navigate("/Contact")}
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </section>
