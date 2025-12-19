@@ -43,9 +43,7 @@ const Herosection = () => {
   </span>
 </h1>
 
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-full md:max-w-lg mx-auto md:mx-0 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-            Our professional trainers guide you with the best programs to achieve a healthy, strong body.
-          </p>
+          
 
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center md:justify-start w-full animate-fade-in-up" style={{animationDelay: '0.6s'}}>
             {/* Start Now Button */}
