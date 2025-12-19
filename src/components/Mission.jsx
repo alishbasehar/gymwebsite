@@ -13,9 +13,9 @@ const Mission = () => {
           </div>
           <h3 className="text-2xl font-bold mt-12 mb-4">Our Mission</h3>
           <p className="text-gray-300 leading-relaxed text-base">
-            To help every member unlock their full potential through personalized training, expert guidance, and a supportive community that inspires consistency and growth.
+          To help every member unlock their full potential through personalized training, expert guidance, and a supportive community that motivates consistency and growth.
             <br /><br />
-            We aim to redefine fitness by creating an empowering space where everyone feels confident to start — and motivated to continue — their journey.
+            We’re on a mission to redefine fitness by creating a space where everyone feels empowered to start — and stay — on their fitness journey.
           </p>
         </div>
 
@@ -26,9 +26,9 @@ const Mission = () => {
           </div>
           <h3 className="text-2xl font-bold mt-12 mb-4">Our Vision</h3>
           <p className="text-gray-300 leading-relaxed text-base">
-            To become Qatar’s most trusted and inspiring fitness community — where passion meets performance.
+           To become Qatar’s most trusted and inspiring fitness community — where passion meets performance.
             <br /><br />
-            We envision a future where fitness is a lifestyle, not a task, and where QR Gym sets new benchmarks in quality, innovation, and real results.
+            We envision a future where fitness becomes a lifestyle, not a task, and where QR Gym sets the standard for quality, innovation, and results.
           </p>
         </div>
       </div>

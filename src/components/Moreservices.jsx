@@ -1,7 +1,7 @@
 
-import img6 from "../images/img6.png";
-import img7 from "../images/img7.png";
-import img8 from "../images/img8.png";
+import img6 from "../images/gym4.jpg";
+import img7 from "../images/gym3.jpg";
+import img8 from "../images/gym5.jpg";
 
 const Moreservices = () => {
     const services = [

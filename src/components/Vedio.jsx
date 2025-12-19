@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import vedio from "../videos/video.mp4";
+import vedio from "../videos/vedio2.mp4";
 import img2 from "../images/bg-shape.png";
 
 const Vedio = () => {
@@ -34,35 +34,38 @@ const Vedio = () => {
       </h2>
 
       {/* Video Container */}
-      <div
-        className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl top-8 z-20 rounded-3xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer border-[3px] border-white border-opacity-20"
-        onClick={openModal}
-      >
-        {/* Responsive aspect ratio wrapper */}
-        <div className="w-full aspect-video">
-          <video
-            src={vedio}
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-contain rounded-3xl pointer-events-none"
-          />
-        </div>
+<div
+  className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl top-8 z-20 rounded-3xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer border-[3px] border-white border-opacity-20"
+  onClick={openModal}
+>
+  {/* Responsive aspect ratio wrapper */}
+  <div className="w-full aspect-video">
+    <video
+      src={vedio}
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover rounded-3xl pointer-events-none"
+    />
+  </div>
 
-        {/* Play Button with glow animation */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div
-            className="flex items-center pl-2 justify-center w-13 h-13 sm:w-18 sm:h-18 md:w-23 md:h-23 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulseGlow"
-            style={{
-              background: "linear-gradient(135deg, #4b3ad3, #1a6ff2)",
-            }}
-          >
-            <span className="text-white text-3xl sm:text-4xl md:text-5xl leading-none">
-              ►
-            </span>
-          </div>
-        </div>
-      </div>
+  {/* Play Button with glow animation */}
+  <div className="absolute inset-0 flex items-center justify-center z-10">
+    <div
+      className="flex items-center pl-2 justify-center w-13 h-13 sm:w-18 sm:h-18 md:w-23 md:h-23 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulseGlow"
+      style={{
+        background: "linear-gradient(135deg, #4b3ad3, #1a6ff2)",
+      }}
+    >
+      <span className="text-white text-3xl sm:text-4xl md:text-5xl leading-none">
+        ►
+      </span>
+    </div>
+  </div>  
+</div>
+
+
+
 
       {/* Modal */}
       {isModalOpen && (
@@ -76,7 +79,7 @@ const Vedio = () => {
           </button>
 
           {/* Modal Video */}
-          <div className="max-w-xl md:max-w-4xl lg:max-w-4xl aspect-video">
+          <div className="max-w-xl md:max-w-4xl lg:max-w-5xl aspect-video">
             <video
               src={vedio}
               controls

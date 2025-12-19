@@ -1,5 +1,6 @@
 
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,15 +23,32 @@ const Footer = () => {
         </div>
 
         {/* Column 2: Quick Links */}
-        <div className="flex-1 min-w-37.5">
-          <h2 className="text-xl font-semibold mb-2">Quick Links</h2>
-          <ul className="space-y-1">
-            <li><a href="/" className="hover:text-[#fdc700] transition">Home</a></li>
-            <li><a href="/Aboutus" className="hover:text-[#fdc700] transition">About Us</a></li>
-            <li><a href="/Services" className="hover:text-[#fdc700] transition">Services</a></li>
-            <li><a href="/Contact" className="hover:text-[#fdc700] transition">Contact Us</a></li>
-          </ul>
-        </div>
+   <div className="flex-1 min-w-[150px]">
+  <h2 className="text-xl font-semibold mb-2">Quick Links</h2>
+  <ul className="space-y-1">
+    <li>
+      <Link to="/" className="hover:text-[#fdc700] transition">
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="/Aboutus" className="hover:text-[#fdc700] transition">
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link to="/Services" className="hover:text-[#fdc700] transition">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/Contact" className="hover:text-[#fdc700] transition">
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
         {/* Column 3: Contact Info with Icons */}
        <div className="flex-1 min-w-50 space-y-6">

@@ -1,7 +1,7 @@
 
-import img1 from "../images/img1.png";
-import img2 from "../images/img2.png";
-import img3 from "../images/img3.png";
+import img1 from "../images/gym1.jpg";
+import img2 from "../images/gym2.jpg";
+import img3 from "../images/gym6.jpg";
 import { useNavigate } from "react-router-dom";
 
 const services = [

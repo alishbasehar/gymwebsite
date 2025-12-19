@@ -1,5 +1,5 @@
 
-import AboutImage from '../images/about-img.png';
+import AboutImage from '../images/bgabout.png';
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -66,16 +66,14 @@ const About = () => {
             We Are Ready To Make You In Shape
           </h2>
 
-          <p className="mb-4 text-gray-300 text-sm sm:text-base">
-            Welcome to QR Gym, your ultimate destination for fitness, strength, and transformation.
-Located in the heart of Al Refaa, Doha – Qatar, QR Gym is designed to inspire and empower individuals of all fitness levels.
+         <p className="mb-4 text-gray-300 text-sm sm:text-base">
+            Welcome to *QR Gym*, your ultimate destination for fitness, strength, and transformation.
+Located in the heart of *Al Refaa, Doha – Qatar*, QR Gym is designed to inspire and empower individuals of all fitness levels.
 Our state-of-the-art facilities, expert trainers, and motivating environment make every workout an opportunity to become stronger — both physically and mentally.
+At QR Gym, we believe that fitness is not just about building your body, it’s about building your confidence, your energy, and your lifestyle.
           </p>
 
-          <p className="mb-6 text-gray-300 text-sm sm:text-base">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui.
-          </p>
+        
 
           {/* Button */}
     <button
