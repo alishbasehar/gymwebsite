@@ -21,65 +21,92 @@ const Herosection = () => {
         `}
       </style>
 
-      <div className="container max-w-7xl  mt-20 lg:min-h-[100vh] lg:h-screen relative mx-auto px-8 py-10 md:py-16 flex flex-col md:flex-row items-center  justify-between">
+      <div className="container max-w-7xl   mt-20 lg:min-h-[100vh] lg:h-screen relative mx-auto px-8 py-10 md:py-16 flex flex-col md:flex-row items-center  justify-between" 
+      style={{
+    background:
+      "radial-gradient(circle at center, rgba(165,129,32,0.35), black 70%)",
+  }}>
+
 
         {/* Background Gradient */}
-        <div className="absolute inset-0 bg-linear-to-r from-black via-[#0b123a] to-black -z-10"></div>
+        <div className="absolute inset-0 bg-black
+
+ -z-10"></div>
 
         {/* Text Content */}
         <div className="text-white md:w-1/2 z-10 text-center md:text-left space-y-6">
-<h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-5xl mb-3 sm:mb-4 md:mb-6 leading-snug animate-fade-in-up"
+<h1 className="font-bold text-lg sm:text-2xl md:text-4xl lg:text-[3.35rem] mb-3 sm:mb-4 md:mb-6 leading-snug animate-fade-in-up"
   style={{ animationDelay: '0.2s' }}
 >
   {/* Line 1 */}
   <span className="block text-white">
-    QR GYM WHERE <span className="text-[#fdc700]">STRENGTH</span>
+    QR GYM WHERE <span className="text-[#A58120]">STRENGTH</span>
   </span>
 
   {/* Line 2 */}
   <span className="block">
     <span className="text-white">MEETS </span>
-    <span className="text-[#fdc700] font-bold">PASSION</span>
+    <span className="text-[#A58120] font-bold">PASSION</span>
   </span>
 </h1>
 
           
 
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center md:justify-start w-full animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+          <div className="flex flex-col sm:flex-row  items-center gap-3 sm:gap-4 justify-center md:justify-start w-full animate-fade-in-up" style={{animationDelay: '0.6s'}}>
             {/* Start Now Button */}
             <button
-              className="px-5 sm:px-8 py-2 sm:py-3 rounded-full text-white font-bold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto"
+              className="px-5 mt-5 sm:px-8 py-2 sm:py-3 rounded-full text-white font-bold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto whitespace-nowrap"
               onClick={() => navigate("/Aboutus")}
               
               style={{
-                background: 'linear-gradient(135deg, #6db4e0, #352ad3)',
+                background: 'linear-gradient(135deg, #A58120, #bcac71)',
                 transition: 'background 0.3s ease',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg,  #352ad3 ,#6db4e0)';
+                e.currentTarget.style.background = 'linear-gradient(135deg,  #bcac71,#A58120';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #6db4e0, #352ad3)';
+                e.currentTarget.style.background = 'linear-gradient(135deg, #A58120, #bcac71)';
               }}
             >
               Start now
             </button>
 
             {/* Watch Video Button */}
-           <button
-  className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1 sm:py-2 bg-[#fdc700] hover:bg-yellow-500 rounded-full text-black font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto justify-center text-xs sm:text-sm"
-  onClick={() => window.open("https://www.tiktok.com/@qrgym0/video/7584207811815542034?_r=1&_t=ZS-9197GaYMHQ7", "_blank")}
+<button
+  className="flex items-center mt-5 gap-2 sm:gap-3 px-3 sm:px-4 py-1 sm:py-2 
+             rounded-full text-black font-bold transition-all duration-300 
+             transform hover:-translate-y-1 hover:shadow-xl 
+             w-auto justify-center text-xs sm:text-sm whitespace-nowrap"
+  style={{
+    background: 'linear-gradient(135deg, #A58120, #bcac71)',
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.background =
+      'linear-gradient(135deg, #bcac71, #A58120)';
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.background =
+      'linear-gradient(135deg, #A58120, #bcac71)';
+  }}
+  onClick={() =>
+    window.open(
+      'https://www.tiktok.com/@qrgym0/video/7584207811815542034?_r=1&_t=ZS-9197GaYMHQ7',
+      '_blank'
+    )
+  }
 >
   <span className="text-lg sm:text-xl">▶</span>
   <span className="text-xs sm:text-sm">Watch A Video</span>
 </button>
 
+
           </div>
         </div>
 
         {/* Image Container */}
-        <div className=" max-w-xl md:max-w-2xl lg:max-w-4xl mt-6 md:mt-0 relative z-10 flex justify-center md:justify-end animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-          <div className="relative w-full max-w-md md:max-w-lg pb-12 md:pb-16">
+        <div className=" max-w-xl md:max-w-2xl lg:max-w-6xl mt-6 md:mt-0 relative z-10 flex justify-center md:justify-end animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+          <div className="relative w-full max-w-md md:max-w-xl lg:max-w-2xl pb-12 md:pb-16">
             <img
               src={heroImage}
               alt="Fitness Model"
@@ -91,9 +118,9 @@ const Herosection = () => {
               <div className="flex justify-between items-center gap-2 sm:gap-3">
                 <div className="flex items-center gap-2 sm:gap-3">
                   <div className="flex gap-1 hover:scale-105 transition-transform duration-700">
-                    <div className="w-1 h-4 sm:w-1.5 sm:h-6 bg-[#fdc700] rounded"></div>
-                    <div className="w-1 h-6 sm:w-1.5 sm:h-8 bg-[#5946EE] rounded"></div>
-                    <div className="w-1 h-3 sm:w-1.5 sm:h-6 bg-[#fdc700] rounded"></div>
+                    <div className="w-1 h-4 sm:w-1.5 sm:h-6 bg-[#A58120] rounded"></div>
+                    <div className="w-1 h-6 sm:w-1.5 sm:h-8 bg-[#e5dfdf] rounded"></div>
+                    <div className="w-1 h-3 sm:w-1.5 sm:h-6 bg-[#A58120] rounded"></div>
                   </div>
                   <div className="text-white text-center sm:text-left">
                     <p className="text-[10px] sm:text-xs md:text-sm text-gray-400">Performance</p>

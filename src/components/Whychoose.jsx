@@ -1,6 +1,6 @@
 import React from 'react';
 // Import your image file
-import TrainersImage from '../images/choose-us-img.png'; // Adjust the path according to your folder structure
+import TrainersImage from '../images/section3.jpg'; // Adjust the path according to your folder structure
 
 const Whychoose = () => {
   return (
@@ -9,7 +9,7 @@ const Whychoose = () => {
      
     >
       {/* Left: Trainers Image */}
-      <div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
+      <div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0 ">
         <img
           src={TrainersImage} // Use the imported image
           alt="Trainers"
@@ -19,7 +19,7 @@ const Whychoose = () => {
 
       {/* Right: Text Content */}
       <div className="w-full md:w-1/2 text-white md:pl-12">
-        <p className="text-[#fdc700] font-semibold text-lg sm:text-xl mb-2">Why Choose Us</p>
+        <p className="text-[#A58120] font-semibold text-lg sm:text-xl mb-2">Why Choose Us</p>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
           The Reason Why You Should Join Us
         </h2>
@@ -36,7 +36,7 @@ const Whychoose = () => {
               <span
                 className="rounded-full p-1 mr-3 w-6 h-6 flex items-center justify-center text-white"
                 style={{
-                  background: "linear-gradient(135deg, #4b3ad3, #1a6ff2)"
+                  background: "linear-gradient(135deg, #A58120, #bcac71)"
                 }}
               >
                 ✔

@@ -28,14 +28,15 @@ const Bmicalculculator = () => {
                  flex items-center justify-center px-4 
                  relative bg-cover bg-center rounded-3xl"
       style={{
-        backgroundImage: `
-          linear-gradient(
-            135deg,
-            rgba(77, 120, 200, 0.93),
-            rgba(32, 25, 120, 0.93)
-          ),
-          url(${bgImage})
-        `,
+       backgroundImage: `
+           linear-gradient(
+             135deg,
+             rgba(165, 129, 32, 0.9),
+             rgba(188, 172, 113, 0.9),
+             rgba(0, 0, 0, 0.99)
+           ),
+           url(${bgImage})
+         `,
         backgroundSize: "contain",
         backgroundPosition: "center",
         backgroundRepeat: "repeat",
@@ -46,7 +47,7 @@ const Bmicalculculator = () => {
 
         {/* Left Section */}
         <div className="flex-1">
-          <h3 className="text-[#fdc700] font-semibold">
+          <h3 className="text-white font-semibold">
             Body Mass Index
           </h3>
           <h1 className="text-white text-4xl font-bold mb-8">
@@ -92,8 +93,8 @@ const Bmicalculculator = () => {
                 className={`flex-1 py-3 rounded-full font-semibold transition
                   ${
                     gender === "Male"
-                      ? "bg-[#fdc700] text-white"
-                      : "bg-white/20 text-white hover:bg-white/30"
+                      ? "bg-[#A58120] text-black"
+                      : "bg-white/20 text-black hover:bg-white/30"
                   }`}
               >
                 Male
@@ -104,8 +105,8 @@ const Bmicalculculator = () => {
                 className={`flex-1 py-3 rounded-full font-semibold transition
                   ${
                     gender === "Female"
-                      ? "bg-[#fdc700] text-white"
-                      : "bg-white/20 text-white hover:bg-white/30"
+                      ? "bg-[#A58120] text-black"
+                      : "bg-white/20 text-black hover:bg-white/30"
                   }`}
               >
                 Female
@@ -115,9 +116,11 @@ const Bmicalculculator = () => {
             {/* Button */}
             <button
               onClick={calculateBMI}
-              className="self-start bg-[#fdc700] text-white 
+              className="self-start bg-[#A58120]  text-black
                          font-semibold px-10 py-3 rounded-full 
-                         hover:bg-yellow-300 transition"
+                        transition"
+                       
+
             >
               Calculate Now
             </button>
@@ -143,7 +146,7 @@ const Bmicalculculator = () => {
         <div className="flex-1 bg-white/15 backdrop-blur-md 
                         rounded-2xl overflow-hidden text-white">
 
-          <div className="flex bg-[#fdc700] text-blue-900 font-semibold">
+          <div className="flex bg-[#A58120] text-black font-semibold">
             <div className="flex-1 p-4">BMI Range</div>
             <div className="flex-1 p-4">Weight Status</div>
           </div>

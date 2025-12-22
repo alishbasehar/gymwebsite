@@ -25,7 +25,7 @@ const Servicecard = () => {
     <section className="bg-black text-white py-20" id="services">
       {/* 🔹 Heading */}
       <div className="text-center mb-16">
-        <p className="text-[#fdc700]  font-semibold text-lg sm:text-xl mb-2">Our Services</p>
+        <p className="text-[#A58120]  font-semibold text-lg sm:text-xl mb-2">Our Services</p>
         <h2 className="text-sm sm:text-2xl lg:text-4xl font-bold leading-snug">
          QR Gym offers a full range of training options  <br/>designed to fit every goal and level 
         </h2>
@@ -42,7 +42,7 @@ const Servicecard = () => {
 
               {/* 🔹 Image with hover gradient */}
               <div className="relative z-10 h-72 flex items-center justify-center group-hover:cursor-pointer">
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-linear-to-br from-[#6db4e0] to-[#352ad3] rounded-2xl" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-linear-to-br from-[#bcac71] to-[#A58120] rounded-2xl" />
                 <img
                   src={service.image}
                   alt="Service"
@@ -52,7 +52,7 @@ const Servicecard = () => {
 
               {/* 🔹 Description below image with hover background yellow */}
               <div className="z-20 mt-4 text-center px-6">
-                <h3 className="text-white text-sm sm:text-base font-semibold px-6 py-3 border-2 border-white rounded-2xl shadow-lg transition-all duration-300 cursor-pointer hover:text-yellow-400">
+                <h3 className="text-white text-sm sm:text-base font-semibold px-6 py-3 border-2 border-white rounded-2xl shadow-lg transition-all duration-300 cursor-pointer hover:text-[#A58120]">
                   {service.description}
                 </h3>
               </div>
@@ -68,14 +68,14 @@ const Servicecard = () => {
           onClick={() => navigate("/Services")}
               className="px-5 sm:px-8 py-2 sm:py-3 rounded-full text-white font-bold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto"
               style={{
-                background: 'linear-gradient(135deg, #6db4e0, #352ad3)',
+                background: 'linear-gradient(135deg, #A58120, #bcac71)',
                 transition: 'background 0.3s ease',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg,  #352ad3 ,#6db4e0)';
+                e.currentTarget.style.background = 'linear-gradient(135deg,  #bcac71,#A58120)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #6db4e0, #352ad3)';
+                e.currentTarget.style.background = 'linear-gradient(135deg, #A58120, #bcac71)';
               }}
             >
              View all services

@@ -39,12 +39,12 @@ const CounterBox = ({ number, text, suffix }) => {
 
   return (
     <div className="relative w-44 h-44 sm:w-52 sm:h-52 flex items-center justify-center mb-6 sm:mb-0">
-      <div className="absolute inset-0 rounded-full bg-blue-700 border-4 border-white/80"></div>
+      <div className="absolute inset-0 rounded-full bg-[#A58120] border-4 border-white/80"></div>
       <div className="relative z-10 text-center">
         <h3 className="text-4xl sm:text-5xl font-bold text-white">
           {count}{suffix}
         </h3>
-        <p className="text-[#fdc700] font-semibold mt-3 text-base sm:text-lg">
+        <p className="text-white font-semibold mt-3 text-base sm:text-lg">
           {text}
         </p>
       </div>
@@ -67,7 +67,7 @@ const Counter = () => {
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(135deg, #6db4e0, #352ad3",
+          background: "linear-gradient(135deg, #A58120, #bcac71)",
           opacity: 0.93, // slightly higher opacity
         }}
       />

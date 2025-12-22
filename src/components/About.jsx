@@ -26,7 +26,7 @@ const About = () => {
           <img
             src={AboutImage}
             alt="About Us"
-            className="rounded-2xl shadow-2xl object-cover w-full max-w-sm sm:max-w-md md:max-w-lg"
+            className="rounded-2xl shadow-2xl object-cover w-full max-w-sm sm:max-w-md md:max-w-md"
           />
 
           {/* 20+ Experience Badge */}
@@ -47,7 +47,7 @@ const About = () => {
               mt-10
             "
           >
-            <span className="text-[#fdc700] font-bold text-lg sm:text-xl">
+            <span className="text-[#A58120] font-bold text-lg sm:text-xl">
               20+
             </span>
             <span className="text-white text-[10px] sm:text-xs leading-tight">
@@ -58,13 +58,13 @@ const About = () => {
 
         {/* Content Section */}
         <div className="w-full md:w-1/2 text-white text-center md:text-left">
-          <p className=" text-[#fdc700]  text-lg sm:text-xl font-semibold mb-6">
+          <p className=" text-[#A58120]  text-lg sm:text-xl font-semibold mb-6">
             About Us
           </p>
 
           
 
-         <p className="mb-4 text-gray-300 text-sm sm:text-base text-justify">
+         <p className="mb-4 text-gray-300 text-sm sm:text-base leading-7.5  text-justify">
             Welcome to *QR Gym*, your ultimate destination for fitness, strength, and transformation.
 Located in the heart of *Al Refaa, Doha – Qatar*, QR Gym is designed to inspire and empower individuals of all fitness levels.
 Our state-of-the-art facilities, expert trainers, and motivating environment make every workout an opportunity to become stronger — both physically and mentally.
@@ -78,14 +78,14 @@ At QR Gym, we believe that fitness is not just about building your body, it’s 
               className="px-5 sm:px-8 py-2 sm:py-3 rounded-full text-white font-bold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-auto"
                onClick={() => navigate("/Aboutus")}
               style={{
-                background: 'linear-gradient(135deg, #6db4e0, #352ad3)',
+                background: 'linear-gradient(135deg, #A58120, #bcac71)',
                 transition: 'background 0.3s ease',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg,  #352ad3 ,#6db4e0)';
+                e.currentTarget.style.background = 'linear-gradient(135deg,  #bcac71 ,#A58120)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #6db4e0, #352ad3)';
+                e.currentTarget.style.background = 'linear-gradient(135deg, #A58120, #bcac71)';
               }}
             >
              Learn More

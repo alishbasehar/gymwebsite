@@ -11,21 +11,24 @@ const Vedio = () => {
   return (
     <section
       className="relative pt-10 px-4 md:px-10 container mx-auto max-w-7xl flex flex-col items-center justify-center rounded-3xl"
-      style={{
-        backgroundImage: `
-          linear-gradient(
-            135deg,
-            rgba(77, 120, 200, 0.93),
-            rgba(32, 25, 120, 0.93)
-          ),
-          url(${img2})
-        `,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
-        backgroundColor: "white",
-      }}
+style={{
+  backgroundImage: `
+    linear-gradient(
+      135deg,
+      rgba(165, 129, 32, 0.9),
+      rgba(188, 172, 113, 0.9),
+      rgba(0, 0, 0, 0.99)
+    ),
+    url(${img2})
+  `,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
+  backgroundColor: "white",
+}}
+
+
     >
       {/* Heading */}
       <h2 className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 max-w-3xl z-10 relative">
@@ -54,7 +57,7 @@ const Vedio = () => {
     <div
       className="flex items-center pl-2 justify-center w-13 h-13 sm:w-18 sm:h-18 md:w-23 md:h-23 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulseGlow"
       style={{
-        background: "linear-gradient(135deg, #4b3ad3, #1a6ff2)",
+        background: "linear-gradient(135deg, #A58120 , #bcac71)",
       }}
     >
       <span className="text-white text-3xl sm:text-4xl md:text-5xl leading-none">
@@ -91,28 +94,34 @@ const Vedio = () => {
       )}
 
       {/* Glow Animation Keyframes */}
-      <style jsx>{`
-        @keyframes pulseGlow {
-          0% {
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
-                        0 0 20px rgba(75, 58, 211, 0.4),
-                        0 0 30px rgba(26, 111, 242, 0.5);
-          }
-          50% {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
-                        0 0 40px rgba(75, 58, 211, 0.6),
-                        0 0 60px rgba(26, 111, 242, 0.7);
-          }
-          100% {
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
-                        0 0 20px rgba(75, 58, 211, 0.4),
-                        0 0 30px rgba(26, 111, 242, 0.5);
-          }
-        }
-        .animate-pulseGlow {
-          animation: pulseGlow 2s infinite ease-in-out;
-        }
-      `}</style>
+     {/* Glow Animation Keyframes */}
+<style jsx>{`
+  @keyframes pulseGlow {
+    0% {
+      box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+      box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.7),
+        0 0 40px rgba(255, 255, 255, 0.5),
+        0 0 60px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .animate-pulseGlow {
+    animation: pulseGlow 2s infinite ease-in-out;
+  }
+`}</style>
+
     </section>
   );
 };

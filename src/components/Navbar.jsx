@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom"; // React Router
+import logo from '../images/logo.jpg'
 
 
 const Navbar = () => {
@@ -32,9 +33,14 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black">
       <div className="container max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl md:text-3xl text-white font-bold">
-          <span className="text-[#fdc700]">Q</span>R GYM.
-        </h1>
+     
+  <img
+    src={logo}
+    alt="QR Gym"
+    className="h-auto w-15 rounded-md"
+  />
+
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-25">
@@ -48,8 +54,8 @@ const Navbar = () => {
                   key={item}
                   onClick={() => handleLinkClick(item)}
                   className={`cursor-pointer relative transition ${
-                    isActive ? "text-[#fdc700]" : "text-white"
-                  } hover:text-[#fdc700]`}
+                    isActive ? "text-[#A58120]" : "text-white"
+                  } hover:text-[#A58120]`}
                 >
                   {item === "About" ? "About Us" : item}
                   {isActive && (
@@ -63,17 +69,17 @@ const Navbar = () => {
           <button
             className="px-6 py-2 rounded-full text-white font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             style={{
-              background: "linear-gradient(135deg, #6db4e0, #352ad3)",
+              background: "linear-gradient(135deg, #A58120, #bcac71",
               transition: "background 0.3s ease",
             }}
             onClick={() => navigate("/Contact")}
             onMouseEnter={(e) => {
               e.currentTarget.style.background =
-                "linear-gradient(135deg,  #352ad3 ,#6db4e0)";
+                "linear-gradient(135deg,  #bcac71 ,#A58120)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background =
-                "linear-gradient(135deg, #6db4e0, #352ad3)";
+                "linear-gradient(135deg, #A58120, #bcac71)";
             }}
           >
             Join Us
@@ -116,7 +122,7 @@ const Navbar = () => {
                 key={item}
                 onClick={() => handleLinkClick(item)}
                 className={`cursor-pointer text-lg ${
-                  isActive ? "text-[#fdc700]" : "text-white"
+                  isActive ? "text-[#A58120]" : "text-white"
                 }`}
               >
                 {item === "About" ? "About Us" : item}
@@ -127,17 +133,17 @@ const Navbar = () => {
           <button
             className="px-6 py-2 rounded-full text-white font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             style={{
-              background: "linear-gradient(135deg, #6db4e0, #352ad3)",
+              background: "linear-gradient(135deg, #A58120, #bcac71)",
               transition: "background 0.3s ease",
             }}
              onClick={() => navigate("/Contact")}
             onMouseEnter={(e) => {
               e.currentTarget.style.background =
-                "linear-gradient(135deg,  #352ad3 ,#6db4e0)";
+                "linear-gradient(135deg, #bcac71, #A58120  )";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background =
-                "linear-gradient(135deg, #6db4e0, #352ad3)";
+                "linear-gradient(135deg,#A58120, #bcac71)";
             }}
           >
             Join Us

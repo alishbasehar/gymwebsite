@@ -6,7 +6,7 @@ const Newslatter = () => {
       <div
         className="max-w-4xl mx-auto mt-10 mb-10 rounded-3xl text-center text-white p-8 md:p-12 shadow-2xl"
         style={{
-          background: "linear-gradient(135deg, #6db4e0, #352ad3)",
+          background: "linear-gradient(135deg, #A58120, #bcac71)",
           opacity: 0.93,
         }}
       >
@@ -25,7 +25,7 @@ const Newslatter = () => {
             href="https://www.instagram.com/qr_gym/?igsh=MmdyNzlobGtlbWE&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 rounded-full bg-[#fdc700] text-black font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            className="px-8 py-3 rounded-full bg-[#A58120] text-black font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
             Subscribe
           </a>

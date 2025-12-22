@@ -31,7 +31,7 @@ const Moreservices = () => {
 
               {/* 🔹 Image with hover gradient */}
               <div className="relative z-10 h-72 flex items-center justify-center group-hover:cursor-pointer">
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-linear-to-br from-[#6db4e0] to-[#352ad3] rounded-2xl" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-linear-to-br from-[#bcac71] to-[#A58120] rounded-2xl" />
                 <img
                   src={service.image}
                   alt="Service"
@@ -41,7 +41,7 @@ const Moreservices = () => {
 
               {/* 🔹 Description below image with hover background yellow */}
               <div className="z-20 mt-4 text-center px-6">
-                <h3 className="text-white text-sm sm:text-base font-semibold px-6 py-3 border-2 border-white rounded-2xl shadow-lg transition-all duration-300 cursor-pointer hover:text-yellow-400">
+                <h3 className="text-white text-sm sm:text-base font-semibold px-6 py-3 border-2 border-white rounded-2xl shadow-lg transition-all duration-300 cursor-pointer hover:text-[#A58120]">
                   {service.description}
                 </h3>
               </div>

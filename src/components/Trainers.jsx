@@ -48,7 +48,7 @@ const Trainers = () => {
 
       {/* Headings */}
       <div className="text-center mb-12">
-        <h3 className="text-[#fdc700] font-semibold text-lg sm:text-xl tracking-widest">
+        <h3 className="text-[#A58120] font-semibold text-lg sm:text-xl tracking-widest">
           OUR TRAINERS
         </h3>
         <h2 className="text-white text-4xl font-bold mt-2">
@@ -60,9 +60,9 @@ const Trainers = () => {
       <button
         onClick={() => scroll("left")}
         className="absolute left-2 top-1/2 -translate-y-1/2 
-                   bg-[#fdc700] w-12 h-12 rounded-full 
+                   bg-[#A58120] w-12 h-12 rounded-full 
                    text-2xl font-bold z-10 
-                   hover:bg-yellow-300 shadow-2xl border-2 border-white transition"
+                   hover:bg-[#bcac71] shadow-2xl border-2 border-white transition"
       >
         ‹
       </button>
@@ -71,9 +71,9 @@ const Trainers = () => {
       <button
         onClick={() => scroll("right")}
         className="absolute right-2 top-1/2 -translate-y-1/2 
-                   bg-yellow-400 w-12 h-12 rounded-full 
+                   bg-[#A58120] w-12 h-12 rounded-full 
                    text-2xl font-bold z-10 
-                   hover:bg-yellow-300 shadow-2xl border-2 border-white transition"
+                   hover:bg-[#bcac71] shadow-2xl border-2 border-white transition"
       >
         ›
       </button>
@@ -88,7 +88,7 @@ const Trainers = () => {
             key={index}
             className="min-w-[260px] h-[360px] relative 
                        rounded-3xl overflow-hidden group shadow-2xl 
-                       border-4 border-[#fdc700] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-white"
+                       border-4 border-[#A58120] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-white"
           >
             <img
               src={trainer.image}

@@ -27,7 +27,7 @@ const Training = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-10 max-w-7xl px-4 py-12">
+    <div className="container mx-auto  max-w-7xl px-4 py-12">
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 justify-center">
         {services.map((service) => {
           const IconComponent = service.icon;
@@ -37,8 +37,8 @@ const Training = () => {
               className="group bg-gray-800 rounded-2xl p-6 text-center  transform transition-transform duration-300 hover:scale-105 flex-1"
             >
               {/* Icon */}
-              <div className="mb-4 w-15 h-16 mx-auto flex items-center justify-center rounded-full bg-gray-700 transition-colors duration-300 group-hover:bg-yellow-400">
-                <IconComponent className="text-yellow-400 group-hover:text-white  w-8 h-8 transition-colors duration-300" />
+              <div className="mb-4 w-15 h-16 mx-auto flex items-center justify-center rounded-full bg-gray-700 transition-colors duration-300 group-hover:bg-[#A58120]">
+                <IconComponent className="text-[#A58120] group-hover:text-white  w-8 h-8 transition-colors duration-300" />
               </div>
 
               {/* Title */}
