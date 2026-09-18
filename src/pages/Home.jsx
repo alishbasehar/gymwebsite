@@ -1,5 +1,5 @@
 import React from 'react'
-import Herosection from '../Components/Herosection'
+import Herosection from '../components/Herosection'
 import Training from '../components/Training';
 import About from '../components/About';
 import Counter from '../components/Counter';
