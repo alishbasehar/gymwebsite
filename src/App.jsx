@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
-    <Router>
+   <Router>
       <ScrollToTop/>
       <Navbar />
       <Routes>
